@@ -10,12 +10,10 @@ const app: Express = express()
 const port: string | number = process.env.PORT || 8000
 
 
-app.get('/', (req: Request, res:Response) => {
-    res.send({ hola: 'Como estasxd' })
+app.get('/', (req: Request, res: Response) => {
+    res.send({ data: 'Goodbye, world' })
 })
-app.get('/hello', (req: Request, res:Response) => {
-    res.send('Hello word')
-})
+
 
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);
